@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculatorFragment">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="34sp"
+            android:textColor="?android:textColorPrimary"
+            android:textStyle="bold"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="55dp"
+            android:text="Calculater" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Calculate Anything"
+            android:layout_marginLeft="24dp"
+            android:textStyle="italic"
+            android:textSize="16sp"
+            />
+
+        <EditText
+            android:id="@+id/et_num1"
+            android:layout_width="356dp"
+            android:layout_height="63dp"
+            android:layout_marginLeft="24dp"
+            android:hint="First Number"
+            android:textSize="25sp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/input"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/et_num2"
+            android:layout_width="356dp"
+            android:layout_height="63dp"
+            android:layout_marginLeft="24dp"
+            android:hint="Second Number"
+            android:textSize="25sp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/input"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="numberDecimal"
+            />
+
+        <Button
+            android:id="@+id/bt_add"
+            android:layout_width="154dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="25dp"
+            android:text="ADD" />
+        <Button
+            android:id="@+id/bt_sub"
+            android:layout_width="154dp"
+            android:layout_height="wrap_content"
+            android:text="SUB"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="25dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bt_div"
+            android:layout_width="154dp"
+            android:layout_height="wrap_content"
+            android:text="DIV"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="327dp"
+            />
+
+        <Button
+            android:id="@+id/bt_mul"
+            android:layout_width="154dp"
+            android:layout_height="wrap_content"
+            android:text="MUL"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="24dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bt_clear"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24sp"
+            android:text="CLR"
+            android:layout_marginTop="500dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_output"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=" "
+            android:textSize="35sp"
+            android:textStyle="bold|italic"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="12dp"
+            />
+
+
+    </LinearLayout>
+</FrameLayout>
